@@ -39,7 +39,6 @@
 									<h3 class="title"><a href="#">{{$product->title}}</a></h3>
 									<div class="price">₴{{$product->price}}
 									</div>
-{{--									<a class="add-to-cart" href="">+ Add To Cart</a>--}}
 								</div>
 							</div>
 						</div>
@@ -55,7 +54,9 @@
 
 @push('js')
 	<script>
+
       $(function () {
+
         $('.category-item').hover(
           function () {
             let productClass = $(this).data('title')
@@ -64,6 +65,7 @@
             let productClass = $(this).data('title')
             $(`.${productClass}`).removeClass('product-hovered')
           })
+
       })
 	</script>
 @endpush

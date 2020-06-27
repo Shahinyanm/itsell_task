@@ -4,16 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Laravel</title>
+	<title>Test Task</title>
 
-	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="{{asset('css/style.css')}}"/>
 
-	<!-- Styles -->
 	<style>
 		html, body {
 			background-color: #fff;
@@ -68,14 +66,18 @@
 	</style>
 </head>
 <body>
+
 <div class="mb-5 mr-5 ml-5">
 	@include('_partials.nabvar')
-@yield('content')
+
+	@yield('content')
+
 </div>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+
 @stack('js')
+
 </body>
 </html>
